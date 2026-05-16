@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Funnel Blueprint - For Chris - AG1</title>
+<meta name="description" content="Funnel Blueprint - built for Chris Harder by AG1 Consulting.">
+<meta name="robots" content="noindex">
+<meta property="og:title" content="Funnel Blueprint - For Chris">
+<meta property="og:description" content="Part of the funnel infrastructure + less-than-7-day install plan built for @chriswharder by AG1 Consulting.">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<script defer data-domain="andrei170.github.io" src="https://plausible.io/js/script.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="docs.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-back"><span class="arrow">&larr;</span> Back to Hub</a>
+    <span class="nav-title">For Chris - AG1</span>
+  </div>
+</nav>
+
+<article class="doc">
+  <header class="doc-header">
+    <span class="doc-tag">Architecture</span>
+    <h1>Chris Harder | Funnel Blueprint</h1>
+  </header>
+
+  
+<p><strong>Prepared 2026-05-16 by AG1 Consulting Ltd for @chriswharder</strong></p>
+<p>The full funnel diagram, phase mapping, tech stack, integration points, and risk + mitigation. This doc is the install architecture; every other deliverable maps into one of the four phases below.</p>
+<hr />
+<h2>Funnel Diagram (Current vs Installed)</h2>
+<h3>Current state (as observed 2026-05-16)</h3>
+<pre><code>Podcast (700+ episodes)
+   |
+   v
+chrisharder.me (homepage text + 6 CTAs)
+   |
+   +-&gt; Blueprint download -&gt; single broadcast newsletter
+   +-&gt; Strategy session (paid, one-off)
+   +-&gt; BeOnline / Money Principles (direct buy courses)
+   +-&gt; MCM apply page -&gt; &quot;APPLY NOW&quot; button -&gt; team review
+   +-&gt; EEM apply page (mastermindharder.com) -&gt; &quot;APPLY NOW&quot; -&gt; team review
+   +-&gt; 1-on-1 apply -&gt; &quot;APPLY NOW&quot; -&gt; team review
+   +-&gt; SMS line 310-421-0416 (broadcast + inbound)
+</code></pre>
+<p>Every paid surface is text-only with a raw apply button. The newsletter is one broadcast lane. MCM has waitlist windows with no interim paid micro-offer.</p>
+<h3>Installed state (after the less-than-7-day install)</h3>
+<pre><code>Podcast (700+ episodes)
+   |
+   v
+chrisharder.me (homepage VSL 6-10 min + scorecard CTA primary, secondary CTAs preserved)
+   |
+   v
+Money Multiplier Score (12 questions, Typeform, returns 0-100 + 3-line readout)
+   |
+   +-&gt; Score 0-39 -&gt; Lane A welcome flow -&gt; BeOnline / Money Principles
+   +-&gt; Score 40-69 -&gt; Lane B welcome flow -&gt; MCM apply page (VSL 4-6 min) -&gt; team review
+   +-&gt; Score 70-89 -&gt; Lane C welcome flow -&gt; EEM apply page (VSL 4-6 min) -&gt; team review
+   +-&gt; Score 90-100 -&gt; 1-on-1 apply page -&gt; direct routing to Chris's calendar
+   |
+   v (parallel)
+MCM-closed windows -&gt; $497-$997 Money Multiplier Sprint (4 weeks, capped 50) -&gt; Sprint grads fast-tracked into next MCM cohort
+</code></pre>
+<p>Three new infrastructure pieces (homepage VSL, application-page VSLs, scorecard) plus three new email flows (Lanes A/B/C) plus one productised holding-pattern offer (sprint). No new mastermind tier. The existing ladder stays as-is.</p>
+<hr />
+<h2>Phase Mapping (Less-Than-7-Day Install)</h2>
+<h3>Phase 1 - Days 1-3 (Core Funnel Install)</h3>
+<p><strong>Goal: VSL bridge live, brand colours locked, homepage rewritten to route into scorecard.</strong></p>
+<ul>
+<li>Day 1: Brand colour lock on AG1 sample assets to match chrisharder.me palette. Homepage VSL script lock (Chris + Lori). Scorecard question set lock.</li>
+<li>Day 2: Homepage VSL shoot day (Chris + Lori, 1 day, 3 takes: homepage 6-10 min, EEM apply 4-6 min, MCM apply 4-6 min). Sample landing page deployed at https://andrei170.github.io/chris-harder-landing/ for review.</li>
+<li>Day 3: VSLs cut, embedded on homepage + EEM apply page + MCM apply page. Money Multiplier Score deployed live on Typeform (<code>uTtFirS4</code> working form ID). Scorecard email-capture tagged to ESP.</li>
+</ul>
+<h3>Phase 2 - Days 4-7 (Scorecard + Nurture + Sprint Page)</h3>
+<p><strong>Goal: Segmented welcome flow live, sprint sales page deployed, MCM warm-list holding pattern ready for next dark window.</strong></p>
+<ul>
+<li>Day 4: Lane A / Lane B / Lane C welcome flows built in ConvertKit (or current ESP). 14-day cadence per lane. Auto-routing from scorecard output + blueprint download tag + podcast-subscribe tag.</li>
+<li>Day 5: Sprint sales page deployed (separate landing, scorecard pre-app gate, capped 50, $497-$997 tier ladder).</li>
+<li>Day 6: Bio-link router updated across IG / YouTube / LinkedIn / X to point at the scorecard as primary, with secondary links preserved.</li>
+<li>Day 7: Full QA pass on the funnel (scorecard scoring logic, lane routing, ESP tags firing, VSL embeds responsive, sprint checkout firing). Handoff doc delivered.</li>
+</ul>
+<h3>Phase 3 - Post-Install Ongoing (Content Compound)</h3>
+<p><strong>Goal: The podcast feeds the funnel; the funnel feeds the podcast.</strong></p>
+<ul>
+<li>Photoshoot / B-roll banking for VSL recuts and ad creative library (Chris + Lori, same shoot day if possible)</li>
+<li>Content cadence: one episode-companion email per week into the segmented flow, tying the latest Chris Harder Show episode to whichever lane it best serves</li>
+<li>Quarterly sprint cycle launches during MCM-closed windows</li>
+<li>Cohort grad receipts captured on MCM wrap calls and EEM in-person events, swapped into the wall on the sales pages</li>
+</ul>
+<h3>Phase 4 - Post-Install Ongoing (Paid Traffic Layer)</h3>
+<p><strong>Goal: The scorecard becomes the paid-traffic landing surface.</strong></p>
+<ul>
+<li>Pixel + GA4 + retargeting tags installed and firing across hub, landing, scorecard, sprint page, and apply pages</li>
+<li>Top-performing organic clips from The Chris Harder Show boosted on Meta + YT shorts to the scorecard</li>
+<li>Retargeting campaigns for landing-page abandons + scorecard quiz starts that did not complete</li>
+<li>Cold campaigns to lookalike audiences of MCM + EEM applicants from sprint cycle 2 forward</li>
+<li>Lead flow target: scaling toward a predictable scorecard completion rate that fills MCM cohorts via paid in parallel with organic</li>
+</ul>
+<hr />
+<h2>Tech Stack</h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Recommended</th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Scorecard</td>
+<td>Typeform (working ID <code>uTtFirS4</code>) or ScoreApp</td>
+<td>Typeform is mature, scoring logic + auto-routing is built in, ESP integrations are clean</td>
+</tr>
+<tr>
+<td>ESP</td>
+<td>ConvertKit (assumed current) or Klaviyo</td>
+<td>Lane-segmentation + tag-based automations are well-supported on either</td>
+</tr>
+<tr>
+<td>Sales pages</td>
+<td>Static HTML on the existing chrisharder.me stack</td>
+<td>No new CMS needed, faster install</td>
+</tr>
+<tr>
+<td>VSL hosting</td>
+<td>YouTube unlisted embed or Vimeo Pro</td>
+<td>YouTube unlisted is free + has the lower friction embed, Vimeo Pro gives more polish</td>
+</tr>
+<tr>
+<td>Sprint checkout</td>
+<td>Stripe + ThriveCart or existing Kajabi if present</td>
+<td>Whichever Chris's team already runs, lower migration cost</td>
+</tr>
+<tr>
+<td>Sprint cohort delivery</td>
+<td>Skool or Circle</td>
+<td>Whichever Chris already uses for MCM, do not introduce a new tool</td>
+</tr>
+<tr>
+<td>CRM</td>
+<td>Existing (Notion / HubSpot / whichever Chris's team uses)</td>
+<td>Scorecard outputs route into existing CRM pipeline, not a new one</td>
+</tr>
+<tr>
+<td>Analytics</td>
+<td>GA4 + Plausible (already in use on the live site)</td>
+<td>No new tool</td>
+</tr>
+</tbody>
+</table>
+<h2>Integration Points</h2>
+<ul>
+<li><strong>Scorecard to ESP:</strong> Typeform webhook to ConvertKit (or equivalent). On submit: tag = <code>scored</code>, custom field = <code>score_band</code> (A / B / C / D), auto-routes into the relevant welcome flow.</li>
+<li><strong>Scorecard to CRM:</strong> Same webhook fires a second event to Chris's CRM. New row created with score, band, primary bottleneck, contact info. Tagged for sales team review.</li>
+<li><strong>VSL to scorecard:</strong> Homepage VSL ends with a single call to take the Money Multiplier Score, button below the player. EEM apply-page VSL ends with the apply form below. MCM apply-page VSL ends with the apply form below.</li>
+<li><strong>Lane to apply page:</strong> Each lane's final email auto-routes the lane-correct apply page (Lane B = MCM apply, Lane C = EEM apply). Lane A finishes on a course-purchase ask. Score 90+ skips lanes and routes direct to 1-on-1 apply.</li>
+<li><strong>Sprint to MCM:</strong> Sprint grads get a fast-track invite to the next MCM cohort. Sprint application uses the same scorecard, so sprint applicants are already pre-scored when MCM opens.</li>
+</ul>
+<h2>Risk + Mitigation</h2>
+<table>
+<thead>
+<tr>
+<th>Risk</th>
+<th>Likelihood</th>
+<th>Mitigation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Chris and Lori cannot shoot the VSL in the install week</td>
+<td>Medium</td>
+<td>Sample homepage VSL on Day 1 uses a podcast-clip placeholder so the funnel routes correctly while the custom shoot is scheduled. Custom VSL embeds swap in on shoot completion.</td>
+</tr>
+<tr>
+<td>Scorecard length depresses completion rate</td>
+<td>Low-Medium</td>
+<td>Twelve questions is the upper bound. If completion rate drops below 60% in first 30 days, trim to 8 questions and re-test.</td>
+</tr>
+<tr>
+<td>ESP migration if current tool does not support tag-based lane segmentation</td>
+<td>Low</td>
+<td>If Mailchimp is the current ESP, migration to ConvertKit happens in parallel during Phase 2. Adds 2-3 days to the install.</td>
+</tr>
+<tr>
+<td>Sprint cycle 1 does not fill the cap</td>
+<td>Medium</td>
+<td>Cap is a soft cap. Sprint 1 is a calibration cycle. Pricing and messaging tune for sprint 2.</td>
+</tr>
+<tr>
+<td>Application-page VSL pulls EEM close rate down (over-qualified applicants self-select out)</td>
+<td>Low</td>
+<td>Net effect on revenue is positive even if raw application count drops. The scorecard does the heavy filter; the VSL adds context.</td>
+</tr>
+<tr>
+<td>Brand-voice drift on AG1-produced copy</td>
+<td>Low</td>
+<td>Copy strategy doc locks voice register; banned phrase list runs on every draft; Chris reviews homepage VSL script + EEM apply-page VSL script in Phase 1.</td>
+</tr>
+<tr>
+<td>Sprint launches without the segmented welcome flow ready</td>
+<td>Medium</td>
+<td>Phase 2 sequencing pins sprint sales page deploy after welcome flow deploy. Sprint launch waits on Lane B + Lane C readiness.</td>
+</tr>
+</tbody>
+</table>
+<h2>Open Questions For The Kickoff Call</h2>
+<ol>
+<li>Confirm current ESP. If Mailchimp, scope migration to ConvertKit; if ConvertKit or Klaviyo, no migration needed.</li>
+<li>Confirm whether Chris and Lori can shoot the VSL day in the install week or whether the custom VSL ships in week 2.</li>
+<li>Confirm current sprint-style offer history (has Chris run anything similar before; if yes, pricing + cap data inform sprint 1 design).</li>
+<li>Confirm scorecard question set with Chris (current draft is 12 questions, can adjust to brand-voice and to specific bottlenecks Chris wants to surface).</li>
+<li>Confirm EEM and MCM apply-page edit access (does Chris's team or AG1 push the embed to mastermindharder.com / chrisharder.me/mentor, what is the deploy path).</li>
+<li>Confirm Frello brand reference policy (acknowledge on hub footer, do not foreground anywhere; confirm Chris is comfortable with the level used).</li>
+</ol>
+<h2>What This Blueprint Does Not Include</h2>
+<ul>
+<li>A new mastermind tier above EEM (out of scope; the wedge is infrastructure on the existing ladder, not new offer architecture)</li>
+<li>A redesign of mastermindharder.com or chrisharder.me beyond VSL embeds and the scorecard CTA additions (the existing sites stay; the install adds layers, does not replace surfaces)</li>
+<li>A change to the Frello brand or surfaces (Frello is a separate company, separate funnel, out of scope)</li>
+<li>A change to the podcast cadence, episode structure, or guest mix (the podcast is the relationship engine, the install respects it)</li>
+<li>A change to Chris's pricing on any existing program (pricing is locked by Chris; AG1 builds infrastructure around the current price points)</li>
+</ul>
+<p>The install is conversion-infrastructure on top of a mature, working coaching ladder. It does not touch the offers, the brand, the podcast, or Frello.</p>
+
+  <footer class="doc-footer">
+    <a href="index.html" class="doc-footer-link">Back to Hub</a>
+    <div class="doc-meta">Prepared 2026-05-16 &middot; Built for @chriswharder</div>
+  </footer>
+</article>
+
+</body>
+</html>
